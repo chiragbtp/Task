@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.companyName{
+    font-size: 150%;
+}
+
+.mat-toolbar{
+  height: 7vh;
+}
+
+div {
+    overflow: inherit;
+}
+
+.mat-sidenav-container{
+//   background-color: lightskyblue;
+  min-height: 93vh !important;
+}
+
+a{
+    text-decoration: none;
+    font-size: 110%;
+    white-space: normal;
+}
+
+button{
+    font-size: 110%;
+    min-width: min-content;
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-sidenav-content{
+      font-size: 200%;
+      text-align: center;
+  }
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-primary {
+    background: #3f51b5;
+    color: #fff;
+    height: 48px;
+}
+
+p {
+  font-family: Lato;
+  }
+  .example-card {
+    max-width: 300px;
+    margin-bottom: 50px;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 250px;
+}
+  
+  mat-card-subtitle{
+  font-size:30px
+  }
+  
+  mat-card-title{
+  color:green;
+  font-size:40px
+  }
+  .header{
+    height: 80px;
+  }
+  .content{
+    height: 110px;
+  }
+  .action{
+    height: 30px;
+  }
