@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CommentsComponent } from './comments/comments.component';
-import { MainComponent } from './main.component';
+import { AlbumListComponent } from './album-list/album-list.component';
+import { AlbumComponent } from './album.component';
 
 
 
 const routes: Routes = [
     {
         path: '',
-        component: MainComponent
+        component: AlbumComponent
     },
     {
-        path: 'comments',
-        component: CommentsComponent
+        path: 'albumList',
+        component: AlbumListComponent
     },
 
 ];
@@ -21,4 +21,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class MainRoutingModule { }
+export class AlbumRoutingModule { }

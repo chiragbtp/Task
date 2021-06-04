@@ -1,0 +1,6 @@
+    <div class="row"  *ngFor="let data of allPhotos">
+        <div class="column">
+          <img [src]="data.url" alt="Snow" >
+          <p class="titleimage">{{data.title}}</p>
+        </div>    
+    </div>

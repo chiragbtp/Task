@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   
   allPost:any
-  constructor( ) { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
     this.getposts();
@@ -19,5 +20,11 @@ export class MainComponent implements OnInit {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => this.allPost=json);;
+  }
+
+  goToComments(id){
+    
+    localStorage.setItem('comments', id);
+    this.router.navigate(['/home/main/comments'])
   }
 }

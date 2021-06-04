@@ -14,6 +14,7 @@ const routes: Routes = [
   loadChildren: () => import('src/app/Views/layout/home/home.module').then(m => m.HomeModule),
   component:HomeComponent
 },
+
 ];
 
 @NgModule({

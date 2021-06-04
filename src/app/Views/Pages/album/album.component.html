@@ -1,0 +1,6 @@
+<div  *ngFor="let data of allAlbum">
+<!-- <img src="img_avatar.png" alt="Avatar"> -->
+
+<button  type="button" mat-button  (click)="goToAlbum(data.id)">
+    {{data.title}}  </button>
+</div>
