@@ -57,7 +57,7 @@ p {
   font-family: Lato;
   }
   .example-card {
-    max-width: 300px;
+    width: 300px;
     margin-bottom: 50px;
     float: left;
     margin-left: 12px;
@@ -158,4 +158,20 @@ p {
     font-weight: 600;
     margin-left: 1%;
     margin-top: 1%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px  ;
+  grid-gap: 10px;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+mat-card.mat-card.mat-focus-indicator.example-card.ng-star-inserted {
+  margin-left: 40px;
 }

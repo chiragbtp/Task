@@ -23,4 +23,9 @@ export class AlbumListComponent implements OnInit {
     .then((response) => response.json())
     .then((json) => this.allPhotos=json);;
   }
+
+  goToFullImage(url){
+    window.open(url,"_blank")
+
+  }
 }

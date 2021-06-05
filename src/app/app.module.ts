@@ -18,7 +18,6 @@ import { AlbumComponent } from './Views/Pages/album/album.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    BrowserAnimationsModule
 
   ],
   providers: [],
